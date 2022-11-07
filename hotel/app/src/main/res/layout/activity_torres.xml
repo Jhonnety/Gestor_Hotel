@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".apartamento">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp">
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:defaultFocusHighlightEnabled="false"></Spinner>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                android:text="TORRES"
+                android:textAlignment="center"
+                android:textColor="#009688"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtNumeroContrato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="6dp"
+                android:hint="Ingrese el numero de la torre"
+                android:inputType="text"
+                android:textColor="#009688"
+                android:textColorHint="#009688"
+                android:lines="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/boton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:editable="true"
+                android:gravity="center"
+                android:text="Ingresar"
+                android:textSize="20dp"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoedificios"
+    tools:context=".Menu">
+
+
+   <ScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="20dp"
+               android:gravity="center"
+               android:text="Menu"
+               android:textColor="#009688"
+               android:textSize="36dp"
+               android:textStyle="bold" />
+
+
+           <RelativeLayout
+               android:id="@+id/usuarios"
+               android:layout_width="match_parent"
+
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginEnd="16dp"
+               android:layout_marginBottom="20dp"
+               android:background="#EAEAEA"
+               android:orientation="vertical"
+               app:cardCornerRadius="20dp"
+               tools:ignore="MissingConstraints">
+
+               <ImageView
+                   android:id="@+id/usuariosLogo"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_centerVertical="true"
+                   android:layout_gravity="center"
+                   android:paddingLeft="14dp"
+                   android:paddingRight="14dp"
+                   app:srcCompat="@drawable/usuario" />
+
+               <LinearLayout
+                   android:id="@+id/linerLayout1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginStart="4dp"
+                   android:layout_marginLeft="4dp"
+                   android:layout_marginTop="4dp"
+                   android:layout_toEndOf="@id/usuariosLogo"
+                   android:layout_toRightOf="@id/usuariosLogo"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="2dp"
+                       android:layout_marginTop="2dp"
+                       android:layout_marginEnd="2dp"
+                       android:layout_marginBottom="2dp"
+                       android:text="USUARIOS"
+                       android:textColor="#03A9F4"
+                       android:textSize="20dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+
+               <ImageView
+                   android:id="@+id/go1"
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginEnd="6dp"
+                   android:layout_marginRight="6dp"
+                   android:text="Ver"
+                   android:textSize="16dp"
+                   app:srcCompat="@drawable/go" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:id="@+id/apartamentos"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="20dp"
+
+               android:layout_marginEnd="16dp"
+               android:layout_marginBottom="20dp"
+               android:background="#EAEAEA"
+               android:orientation="vertical"
+               app:cardCornerRadius="20dp"
+
+               >
+
+               <ImageView
+                   android:id="@+id/apartamentosLogo"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_centerVertical="true"
+                   android:layout_gravity="center"
+                   android:paddingLeft="14dp"
+                   android:paddingRight="14dp"
+                   app:srcCompat="@drawable/logo" />
+
+               <LinearLayout
+                   android:id="@+id/linerLayout2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginStart="4dp"
+                   android:layout_marginLeft="4dp"
+                   android:layout_marginTop="4dp"
+                   android:layout_toEndOf="@id/apartamentosLogo"
+                   android:layout_toRightOf="@id/apartamentosLogo"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="2dp"
+                       android:layout_marginTop="2dp"
+                       android:layout_marginEnd="2dp"
+                       android:layout_marginBottom="2dp"
+                       android:text="APARTAMENTOS"
+                       android:textColor="#03A9F4"
+                       android:textSize="20dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+
+               <ImageView
+                   android:id="@+id/go2"
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginEnd="6dp"
+                   android:layout_marginRight="6dp"
+                   android:text="Ver"
+                   android:textSize="16dp"
+                   app:srcCompat="@drawable/go" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:id="@+id/contratos"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginEnd="16dp"
+               android:layout_marginBottom="20dp"
+               android:background="#EAEAEA"
+               android:orientation="vertical"
+               app:cardCornerRadius="20dp">
+
+               <ImageView
+                   android:id="@+id/contratosLogo"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_centerVertical="true"
+                   android:layout_gravity="center"
+                   android:paddingLeft="14dp"
+                   android:paddingRight="14dp"
+                   app:srcCompat="@drawable/contrato" />
+
+               <LinearLayout
+                   android:id="@+id/linerLayout3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginStart="4dp"
+                   android:layout_marginLeft="4dp"
+                   android:layout_marginTop="4dp"
+                   android:layout_toEndOf="@id/contratosLogo"
+                   android:layout_toRightOf="@id/contratosLogo"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="2dp"
+                       android:layout_marginTop="2dp"
+                       android:layout_marginEnd="2dp"
+                       android:layout_marginBottom="2dp"
+                       android:text="CONTRATOS"
+                       android:textColor="#03A9F4"
+                       android:textSize="20dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+
+               <ImageView
+                   android:id="@+id/go3"
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginEnd="6dp"
+                   android:layout_marginRight="6dp"
+                   android:text="Ver"
+                   android:textSize="16dp"
+                   app:srcCompat="@drawable/go" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:id="@+id/torres"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="20dp"
+
+               android:layout_marginEnd="16dp"
+               android:background="#EAEAEA"
+               android:orientation="vertical"
+               app:cardCornerRadius="20dp">
+
+               <ImageView
+                   android:id="@+id/TorresLogo"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_centerVertical="true"
+                   android:layout_gravity="center"
+                   android:paddingLeft="14dp"
+                   android:paddingRight="14dp"
+                   app:srcCompat="@drawable/apartamento" />
+
+               <LinearLayout
+                   android:id="@+id/linerLayout4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginStart="4dp"
+                   android:layout_marginLeft="4dp"
+                   android:layout_marginTop="4dp"
+                   android:layout_toEndOf="@id/TorresLogo"
+                   android:layout_toRightOf="@id/TorresLogo"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="2dp"
+                       android:layout_marginTop="2dp"
+                       android:layout_marginEnd="2dp"
+                       android:layout_marginBottom="2dp"
+                       android:text="TORRES"
+                       android:textColor="#03A9F4"
+                       android:textSize="20dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+
+               <ImageView
+                   android:id="@+id/go4"
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginEnd="6dp"
+                   android:layout_marginRight="6dp"
+                   android:text="Ver"
+                   android:textSize="16dp"
+                   app:srcCompat="@drawable/go" />
+           </RelativeLayout>
+       </LinearLayout>
+
+
+   </ScrollView>
+
+</RelativeLayout>

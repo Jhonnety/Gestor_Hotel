@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">hotel</string>
+    <string-array name="opciones">
+        <item>Buscar</item>
+        <item>Ingresar</item>
+        <item>Editar</item>
+        <item>Borrar</item>
+    </string-array>
+</resources>
